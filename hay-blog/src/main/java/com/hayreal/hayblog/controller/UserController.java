@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@Api(tags = "控制器--user")
+@Api(tags = "user相关接口")
 @RequestMapping("/user")
 public class UserController {
 
