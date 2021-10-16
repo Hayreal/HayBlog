@@ -1,9 +1,10 @@
-package com.hayreal.common.base;
+package com.hayreal.common.entity;
 
+import com.hayreal.common.base.BaseEntity;
 import lombok.Data;
 
 @Data
-public class CommentEntity extends BaseEntity{
+public class Comment extends BaseEntity {
 
     /**
      * 评论id

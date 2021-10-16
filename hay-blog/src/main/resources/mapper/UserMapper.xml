@@ -5,7 +5,7 @@
 <mapper namespace="com.hayreal.hayblog.mapper.UserMapper">
 
 
-    <select id="findPasswordByUid" resultType="java.lang.String">
-        select password from user where user_name = #{userName}
+    <select id="getUserByPhone" resultType="com.hayreal.common.entity.User">
+        select id,user_name,password,birth_date,phone from user where user_name = #{phone}
     </select>
 </mapper>

@@ -6,8 +6,8 @@ public enum ResultMsgEnum {
     AUTH_ERROR(502, "授权失败!"),
     SERVER_BUSY(503, "服务器正忙，请稍后再试!"),
     DATABASE_OPERATION_FAILED(504, "数据库操作失败");
-    private int code;
-    private String message;
+    private final int code;
+    private final String message;
 
     ResultMsgEnum(int code, String message) {
         this.code = code;
