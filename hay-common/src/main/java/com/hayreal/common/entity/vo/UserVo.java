@@ -2,10 +2,12 @@ package com.hayreal.common.entity.vo;
 
 import lombok.Data;
 
+import java.io.Serializable;
 import java.util.Date;
 
 @Data
-public class UserVo {
+public class UserVo implements Serializable {
+    private static final long serialVersionUID = 1L;
 
     private Long id;
 
@@ -13,9 +15,10 @@ public class UserVo {
 
     private String password;
 
-    private Date birthDate;
 
     private String phone;
 
+
+    private String token;
 
 }
